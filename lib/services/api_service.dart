@@ -15,7 +15,6 @@ class ApiService {
   Future<List<Article>> getArticle() async {
     Response res = await get(endPointUrl);
 
-    //first of all let's check that we got a 200 statu code: this mean that the request was a succes
     if (res.statusCode == 200) {
       Map<String, dynamic> json = jsonDecode(res.body);
 
