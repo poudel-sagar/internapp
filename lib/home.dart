@@ -29,10 +29,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Bitcoin News App", style: TextStyle(color: Colors.black)),
-        backgroundColor: Colors.white,
-      ),
+      
 
       body: FutureBuilder(
         future: client.getArticle(),
